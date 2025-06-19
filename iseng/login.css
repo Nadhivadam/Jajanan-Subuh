@@ -1,0 +1,290 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #1e293b 0%, #0f766e 100%);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: none;
+}
+.login-modal-content {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(16, 24, 40, 0.15),
+    0 2px 8px rgba(16, 24, 40, 0.08);
+  width: 100%;
+  max-width: 400px;
+  color: #1e293b;
+  position: relative;
+  border: none;
+  padding: 2.5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.shopify-logo {
+  display: block;
+  margin: 0 auto 10px auto;
+  height: 32px;
+}
+.login-modal-content h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.2rem;
+  color: #1e293b;
+  font-weight: 600;
+}
+.subtitle {
+  color: #64748b;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+#login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#login-form label {
+  font-size: 1rem;
+  color: #1e293b;
+  font-weight: 500;
+  margin-top: 0.7rem;
+}
+#login-form input[type="text"],
+#login-form input[type="password"] {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f8fafc;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+  transition: border 0.2s;
+}
+#login-form input[type="text"]:focus,
+#login-form input[type="password"]:focus {
+  border: 1.5px solid #0f766e;
+  outline: none;
+}
+#login-form button[type="submit"] {
+  width: 100%;
+  padding: 0.8rem;
+  background: #212326;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+  transition: background 0.2s, transform 0.2s;
+}
+#login-form button[type="submit"]:hover {
+  background: #0f766e;
+  transform: translateY(-2px) scale(1.01);
+}
+.passkey-signin {
+  color: #64748b;
+  font-size: 0.98rem;
+  text-align: center;
+  margin: 0.7rem 0 0.7rem 0;
+}
+.divider {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+  line-height: 0.1em;
+  margin: 1.2rem 0 1.2rem 0;
+}
+.divider span {
+  background: #fff;
+  padding: 0 12px;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+.social {
+  background: #f1f5f9;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  height: 44px;
+}
+.social img {
+  width: 24px;
+  height: 24px;
+}
+.social:hover {
+  background: #e0f2fe;
+  box-shadow: 0 2px 8px rgba(16, 24, 40, 0.08);
+}
+.footer-text {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #64748b;
+  font-size: 0.97rem;
+}
+.get-started {
+  color: #0f766e;
+  text-decoration: none;
+  font-weight: 500;
+}
+.get-started:hover {
+  text-decoration: underline;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 0.5rem;
+  font-size: 0.93rem;
+}
+.footer-links a {
+  color: #64748b;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+.forgot-password {
+  width: 100%;
+  text-align: right;
+  margin: 0.5rem 0 0.5rem 0;
+}
+.forgot-password a {
+  color: #0f766e;
+  text-decoration: none;
+  font-size: 0.98rem;
+  font-weight: 500;
+  transition: text-decoration 0.2s;
+}
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+#register-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#register-form label {
+  font-size: 1rem;
+  color: #1e293b;
+  font-weight: 500;
+  margin-top: 0.7rem;
+}
+#register-form input[type="text"],
+#register-form input[type="email"],
+#register-form input[type="password"] {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f8fafc;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+  transition: border 0.2s;
+}
+#register-form input[type="text"]:focus,
+#register-form input[type="email"]:focus,
+#register-form input[type="password"]:focus {
+  border: 1.5px solid #0f766e;
+  outline: none;
+}
+#register-form button[type="submit"] {
+  width: 100%;
+  padding: 0.8rem;
+  background: #212326;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+  transition: background 0.2s, transform 0.2s;
+}
+#register-form button[type="submit"]:hover {
+  background: #0f766e;
+  transform: translateY(-2px) scale(1.01);
+}
+@media (max-width: 768px) {
+  .login-modal-content {
+    max-width: 95vw;
+    width: 50vw;
+    height: 60vh;
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+    border-radius: 10px;
+  }
+  .login-modal-content h2 {
+    font-size: 1.2rem;
+  }
+  .subtitle {
+    font-size: 0.95rem;
+  }
+  #login-form label {
+    font-size: 0.93rem;
+    margin-top: 0.5rem;
+  }
+  #login-form input[type="text"],
+  #login-form input[type="password"] {
+    font-size: 0.93rem;
+    padding: 0.5rem;
+  }
+  #login-form button[type="submit"] {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+  .social {
+    padding: 0.4rem 0.8rem;
+    height: 38px;
+  }
+  .social img {
+    width: 20px;
+    height: 20px;
+  }
+  .forgot-password {
+    margin: 0.3rem 0 0.3rem 0;
+    text-align: center;
+  }
+  #register-form label {
+    font-size: 0.93rem;
+    margin-top: 0.5rem;
+  }
+  #register-form input[type="text"],
+  #register-form input[type="email"],
+  #register-form input[type="password"] {
+    font-size: 0.93rem;
+    padding: 0.5rem;
+  }
+  #register-form button[type="submit"] {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+}

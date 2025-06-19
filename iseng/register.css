@@ -1,0 +1,164 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #2e5217 0%, #51a020 40%, #5bb324 100%);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+}
+.register-modal-content {
+  background: linear-gradient(120deg, #fff 60%, #e0ffe6 100%);
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(35, 207, 43, 0.15),
+    0 2px 8px rgba(22, 102, 26, 0.08);
+  width: 100%;
+  max-width: 340px;
+  color: #16661a;
+  position: relative;
+  border: 2px solid #23cf2b;
+}
+.register-modal-content h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #23cf2b;
+  letter-spacing: 1px;
+}
+.register-modal-content label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #16661a;
+}
+.register-modal-content input[type="text"],
+.register-modal-content input[type="password"] {
+  width: 90%;
+  padding: 0.7rem;
+  margin-bottom: 1.2rem;
+  border: 1.5px solid #23cf2b;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f6fff8;
+  color: #16661a;
+  transition: border 0.2s;
+}
+.register-modal-content input[type="text"]:focus,
+.register-modal-content input[type="password"]:focus {
+  border: 1.5px solid #16661a;
+  outline: none;
+}
+.register-modal-content button[type="submit"] {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  padding: 0.8rem;
+  background: linear-gradient(90deg, #23cf2b 60%, #16661a 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(35, 207, 43, 0.08);
+  transition: background 0.4s, transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.register-modal-content button[type="submit"]:hover {
+  background: linear-gradient(90deg, #16661a 60%, #23cf2b 100%);
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 8px 24px rgba(35, 207, 43, 0.18);
+}
+.register-modal-content button[type="submit"]::after {
+  content: "";
+  position: absolute;
+  left: -75%;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.18);
+  transform: skewX(-20deg);
+  transition: left 0.4s;
+  pointer-events: none;
+}
+.register-modal-content button[type="submit"]:hover::after {
+  left: 120%;
+}
+#register-success {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.login-link {
+  color: #23cf2b;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+}
+.login-link:hover {
+  color: #16661a;
+}
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    min-height: 80%;
+  }
+  .register-modal-content {
+    max-width: 70vw;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    border-radius: 10px;
+    font-size: 0.97rem;
+  }
+  .register-modal-content h2 {
+    font-size: 1.2rem;
+  }
+  .register-modal-content button[type="submit"] {
+    font-size: 0.98rem;
+    padding: 0.6rem;
+  }
+  .register-modal-content input[type="text"],
+  .register-modal-content input[type="password"] {
+    font-size: 0.97rem;
+    padding: 0.5rem;
+  }
+  .fb-row,
+  .register-row {
+    flex-direction: column !important;
+    gap: 0.2rem !important;
+  }
+}
+@media (max-width: 450px) {
+  .register-modal-content {
+    max-width: 98vw;
+    padding: 0.2rem 0.1rem 0.2rem 0.1rem;
+    font-size: 0.85rem;
+    border-radius: 7px;
+  }
+  .register-modal-content h2 {
+    font-size: 0.95rem;
+  }
+  .register-modal-content button[type="submit"] {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+  .register-modal-content input[type="text"],
+  .register-modal-content input[type="password"] {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+  .fb-row,
+  .register-row {
+    flex-direction: column !important;
+    gap: 0.1rem !important;
+  }
+}

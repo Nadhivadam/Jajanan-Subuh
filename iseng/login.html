@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Jajanan Subuh</title>
+    <link rel="icon" href="img/LOGO JJS.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="login-modal">
+      <div class="login-modal-content">
+        <img
+          src="img/LOGO JJS.png"
+          class="shopify-logo"
+          style="height: 32px; margin-bottom: 10px"
+        />
+        <h2>Log in</h2>
+        <p class="subtitle">Continue to Jjs</p>
+        <form id="login-form">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            autocomplete="username"
+            required
+          />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            autocomplete="current-password"
+            required
+          />
+          <button type="submit">Login</button>
+        </form>
+        <div class="forgot-password"><a href="#">Lupa password?</a></div>
+        <div class="divider"><span>or</span></div>
+        <div class="social-login">
+          <button class="social apple" type="button">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg"
+              alt="Apple"
+            />
+          </button>
+          <button class="social facebook" type="button">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg"
+              alt="Facebook"
+            />
+          </button>
+          <button class="social google" type="button">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+              alt="Google"
+            />
+          </button>
+        </div>
+        <div class="footer-text">
+          New to Jajanan Subuh?
+          <a href="register.html" class="get-started">Sign Up →</a>
+        </div>
+        <div class="footer-links">
+          <a href="#">Help</a> <a href="#">Privacy</a> <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
